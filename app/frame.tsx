@@ -20,17 +20,25 @@ export default function TabOneScreen() {
                  <Text style={{ fontSize: 20, color: '#FFFFFF',  alignSelf: "center",fontWeight: 'bold',}}>Login Akaun</Text>
                 )}
               </Pressable>
-          
-        </Link>
-            
+        </Link>  
         </View>
         <View style={styles.container3}> 
-            <Text style={{ fontSize: 20, color: '#DE8E03',  alignSelf: "center",fontWeight: 'bold',}}>Daftar Akaun</Text>
+        <Link href="/daftar" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                 <Text style={{ fontSize: 20, color: '#DE8E03',  alignSelf: "center",fontWeight: 'bold',}}>Daftar Akaun</Text>
+                )}
+              </Pressable>
+        </Link>
+            
         </View>
       </View>
     );
   }
   
+
+
+
 const styles = StyleSheet.create({
   container1: {
     flex: 1,
@@ -43,7 +51,7 @@ const styles = StyleSheet.create({
     marginRight: 15,
     justifyContent: "center",
     borderRadius: 10,
-    borderColor:'#DE8E03',
+    borderColor:'#FFFFFF',
     borderWidth: 2,
     paddingHorizontal: 120,
     alignSelf: "center",
@@ -58,7 +66,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor:'#DE8E03',
     borderWidth: 3,
-    paddingHorizontal: 120,
+    paddingHorizontal: 115,
     alignSelf: "center",
     paddingVertical: 15,
     marginTop: 10, 
