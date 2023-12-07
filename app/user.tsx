@@ -1,16 +1,16 @@
 import { StyleSheet, Pressable, Image } from 'react-native';
-import { Text, View, } from '../../components/Themed';
+import { Text, View, } from '../components/Themed';
 import { Link,  } from 'expo-router';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       <View style ={{flexDirection: "row"}}> 
       <Image style={styles.circle}
-      source={require("../../assets/images/user.png")} /> 
+      source={require("../assets/images/unnamed.jpg")} /> 
        <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (
-                  <Text style={styles.title}>Guest</Text>
+                  <Text style={styles.title}>Wan Azlin</Text>
                 )}
               </Pressable>
        </Link>
@@ -18,17 +18,17 @@ export default function TabOneScreen() {
       <View style ={{flexDirection: "row"}}>
       <View style={styles.box1}>
       <Image style={styles.stretch}
-          source={require("../../assets/images/commission.png")} />
+          source={require("../assets/images/commission.png")} />
       <Text style={styles.paratext1}>Today</Text> 
-      <Text style={styles.text1}>RM 0.00</Text> 
+      <Text style={styles.text1}>RM 500</Text> 
 
       </View>
 
       <View style={styles.box2}>
       <Image style={styles.stretch}
-          source={require("../../assets/images/increase.png")} />
+          source={require("../assets/images/increase.png")} />
       <Text style={styles.paratext1}>Month</Text> 
-      <Text style={styles.text1}>RM 0.00</Text> 
+      <Text style={styles.text1}>RM 1000</Text> 
       </View>
       </View>
      

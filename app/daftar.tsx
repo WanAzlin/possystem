@@ -23,19 +23,20 @@ export default function TabOneScreen() {
       <Text style={styles.text2}>***** </Text>
       </View>
       <View style={styles.container1}>     
-      <Link href="/index" asChild>
+      <Link href="/login" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <Text style={styles.title}>Login Here</Text>
                 )}
               </Pressable>
- </Link>            
+      </Link>            
  </View>
- <Link href="/login" asChild>
-<Pressable>
-  {({ pressed }) => (
-    <Text style={styles.title5}>Already have an account? Log in</Text>
-  )}
+
+ <Link href="/frame" asChild>
+    <Pressable>
+       {({ pressed }) => (
+         <Text style={styles.title5}>Already have an account? Log in</Text>
+   )}
 </Pressable>
 </Link>
     </View>
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingTop: 10,
     color: '#FFFFFF',
-   marginRight: 280,
+   marginRight: 300,
    
   },
   title4: {

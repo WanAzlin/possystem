@@ -19,7 +19,7 @@ export default function TabOneScreen() {
 
       
       <View style={styles.container1}>     
-      <Link href="/frame" asChild>
+      <Link href="/user" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <Text style={styles.title}>Login Here</Text>
