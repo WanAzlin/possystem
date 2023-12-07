@@ -1,14 +1,19 @@
 import { StyleSheet } from 'react-native';
-
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/two.tsx" />
+      <View style={styles.box1}>
+      <Text style={styles.title}>December 23</Text>
+      </View>
+      <Text style={styles.title1}>07 Dec, 07:28</Text>
+      <View style ={{flexDirection: "row"}}>
+      <Text style={styles.p1}>Sale 1</Text>
+      <Text style={styles.p1p}>RM 100</Text>
+      </View>
+      <Text style={styles.p1p2}>Online Transfer</Text>
     </View>
   );
 }
@@ -16,16 +21,46 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
+    
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+    paddingTop: 30,
+    marginLeft: 20,
   },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+  title1: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    paddingTop: 30,
+    marginLeft: 20,
+    color: "#AEAEAE"
+  },
+  p1: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    paddingTop: 8,
+    marginLeft: 20,
+  },
+  p1p: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    paddingTop: 8,
+    marginLeft: 240,
+   
+  },
+  p1p2: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    paddingTop: 8,
+    marginLeft: 20,
+    color: "#AEAEAE"
+  },
+  box1:{
+    borderRadius: 20,
+    backgroundColor: "#AEAEAE",
+    paddingBottom: 20,
+  
   },
 });
