@@ -1,66 +1,38 @@
-import { StyleSheet } from 'react-native';
-import EditScreenInfo from '../../components/EditScreenInfo';
+import { StyleSheet,Image} from 'react-native';
 import { Text, View } from '../../components/Themed';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <View style={styles.box1}>
-      <Text style={styles.title}>December 23</Text>
-      </View>
-      <Text style={styles.title1}>07 Dec, 07:28</Text>
-      <View style ={{flexDirection: "row"}}>
-      <Text style={styles.p1}>Sale 1</Text>
-      <Text style={styles.p1p}>RM 100</Text>
-      </View>
-      <Text style={styles.p1p2}>Online Transfer</Text>
+      
+      <Image style={styles.iBF4}
+      source={require("../../assets/images/no-results.png")} /> 
+      <Text style={styles.title1}>No Result Found..</Text>
+      
+      
     </View>
+    
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'flex-start',
+    alignItems: 'center',
     
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    paddingTop: 30,
-    marginLeft: 20,
+  iBF4: {
+    width: 200,
+    height:200,
+    marginTop: 100,
+    marginLeft: 20, 
   },
   title1: {
-    fontSize: 15,
-    fontWeight: 'bold',
-    paddingTop: 30,
-    marginLeft: 20,
-    color: "#AEAEAE"
+    fontSize: 30,
+    paddingTop: 10,
+    marginLeft: 13,
+    color: "#AEAEAE",
+    fontWeight: "bold",
   },
-  p1: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    paddingTop: 8,
-    marginLeft: 20,
-  },
-  p1p: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    paddingTop: 8,
-    marginLeft: 240,
-   
-  },
-  p1p2: {
-    fontSize: 15,
-    fontWeight: 'bold',
-    paddingTop: 8,
-    marginLeft: 20,
-    color: "#AEAEAE"
-  },
-  box1:{
-    borderRadius: 20,
-    backgroundColor: "#AEAEAE",
-    paddingBottom: 20,
   
-  },
 });

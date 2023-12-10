@@ -31,10 +31,45 @@ export default function TabOneScreen() {
       <Text style={styles.text1}>RM 1000</Text> 
       </View>
       </View>
+      <View style ={{flexDirection: "row"}}> 
+      <View style={styles.boxF}>
+      <Image style={styles.iBF1}
+      source={require("../assets/images/add-product.png")} /> 
+       <Link href="/frame" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <Text style={styles.tBF1}>Create Sale</Text>
+                )}
+              </Pressable>
+       </Link>
+      </View>   
+      <View style={styles.boxF}>
+      <Image style={styles.iBF2}
+      source={require("../assets/images/completed.png")} /> 
+       <Link href="/addSale" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <Text style={styles.tBF2}>Add Sale</Text>
+                )}
+              </Pressable>
+       </Link>
+      </View>  
+      <View style={styles.boxF}>
+      <Image style={styles.iBF3}
+      source={require("../assets/images/cost.png")} /> 
+       <Link href="/vSale" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <Text style={styles.tBF3}>View Sale</Text>
+                )}
+              </Pressable>
+       </Link>
+      </View>     
+      </View>
+      </View>
      
 
 
-    </View>
   );
 }
 
@@ -112,5 +147,47 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     marginTop: 50,
     paddingHorizontal: 25,
+  },
+  boxF: {
+    paddingTop: 30,
+  },
+  iBF1: {
+    width: 50,
+    height: 50,
+  
+    marginLeft: 40,
+    
+  },
+  tBF1: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft:18,
+    paddingTop: 8,
+  },
+  iBF2: {
+    width: 50,
+    height: 50,
+  
+    marginLeft: 35,
+    
+  },
+  tBF2: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft:25,
+    paddingTop: 8,
+  },
+  iBF3: {
+    width: 50,
+    height: 50,
+  
+    marginLeft: 40,
+    
+  },
+  tBF3: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft:25,
+    paddingTop: 8,
   },
 });

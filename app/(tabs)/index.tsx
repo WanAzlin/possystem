@@ -4,6 +4,7 @@ import { Link,  } from 'expo-router';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
+      <View style={styles.box3}>
       <View style ={{flexDirection: "row"}}> 
       <Image style={styles.circle}
       source={require("../../assets/images/user.png")} /> 
@@ -14,6 +15,7 @@ export default function TabOneScreen() {
                 )}
               </Pressable>
        </Link>
+      </View>
       </View>
       <View style ={{flexDirection: "row"}}>
       <View style={styles.box1}>
@@ -43,8 +45,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'flex-start',
     paddingTop: 30,
-    marginLeft: 30,
   },
+  box3: {
+    marginLeft: 20,
+    
+  },
+
   cont: {
     marginLeft: 30,
     backgroundColor: "#DE8E03",
@@ -83,8 +89,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#DE8E03",
   },
   box1: {
-    marginLeft: 5,
-    marginRight: 25,
+    marginLeft: 20,
+    marginRight: 20,
     
     backgroundColor: "#DE8E03",
     padding: 18,
@@ -101,7 +107,7 @@ const styles = StyleSheet.create({
 
   box2: {
     
-    
+    marginLeft: 5,
     backgroundColor: "#DE8E03",
     padding: 18,
     shadowColor: "black",
