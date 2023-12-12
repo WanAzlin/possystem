@@ -35,7 +35,7 @@ export default function TabOneScreen() {
       <View style={styles.boxF}>
       <Image style={styles.iBF1}
       source={require("../assets/images/add-product.png")} /> 
-       <Link href="/frame" asChild>
+       <Link href="/cSale" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <Text style={styles.tBF1}>Create Sale</Text>
