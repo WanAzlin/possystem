@@ -5,8 +5,15 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       <View style ={{flexDirection: "row"}}> 
-      <Image style={styles.circle}
-      source={require("../assets/images/unnamed.jpg")} /> 
+      <Link href="/profile" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                 <Image style={styles.circle}
+                 source={require("../assets/images/unnamed.jpg")} /> 
+                )}
+              </Pressable>
+       </Link>
+      
        <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (

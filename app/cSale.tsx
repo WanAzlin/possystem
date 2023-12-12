@@ -92,8 +92,7 @@ resetValue3= () => {
     <View style={styles.container}>
       <View style={styles.topbutton}>
       <View style={{flexDirection:'row'}}>
-      <Image style={styles.iBF3}
-      source={require("../assets/images/redo.png")} /> 
+    
       <Button  color="#FFFFFF"  onPress={this.resetValue2} title="Reset"/>
       </View>
     </View>
@@ -166,7 +165,7 @@ const styles = StyleSheet.create({
   topbutton: { 
     marginRight: 10,
     justifyContent: "center",
-    borderRadius: 20,
+    borderRadius: 10,
     borderColor: '#C70039',
     paddingHorizontal: 10,
     alignSelf: "flex-end",
